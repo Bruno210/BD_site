@@ -19,6 +19,8 @@ insert into usuarios values
 (default,'YURI MARINHO','m','2001-09-12','teste@gmail.com','123123')
 ; 
 
+alter table usuarios add column CPF varchar(11) not null default '' after nome;
+
 select * from usuarios;
 
 create table if not exists Contatos ( 
